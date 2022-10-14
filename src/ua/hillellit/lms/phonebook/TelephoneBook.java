@@ -13,7 +13,7 @@ public class TelephoneBook {
 
   public TelephoneEntry find(String name) {
     for (TelephoneEntry ent : entryList) {
-      if (ent.getName() == name) {
+      if (ent.getName().equals(name)) {
         return ent;
       }
     }
@@ -24,7 +24,7 @@ public class TelephoneBook {
 
     List<TelephoneEntry> list = new ArrayList<>();
     for (TelephoneEntry ent : entryList) {
-      if (ent.getName() == name) {
+      if (ent.getName().equals(name)) {
         list.add(ent);
       }
     }
